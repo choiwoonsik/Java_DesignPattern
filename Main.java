@@ -1,6 +1,7 @@
 import AdapterPattern.Person;
 import AdapterPattern.PersonAdapter;
 import BuilderPattern.HTML;
+import CommandPattern.DrawingApp;
 import DecoratorPattern.FullBorder;
 import DecoratorPattern.Scaffold;
 import DecoratorPattern.SideBorder;
@@ -13,7 +14,12 @@ import SigletonePattern.Singleton;
 
 public class Main {
     public static void main(String[] args) {
-        decorator();
+        command();
+    }
+
+    private static void command()
+    {
+        new DrawingApp("commandPattern");
     }
 
     private static void decorator() {
